@@ -1,0 +1,44 @@
+{
+  "name": "leczo",
+  "version": "0.1.0",
+  "description": "Experimental light-weight rendering library",
+  "source": "src/index.ts",
+  "main": "dist/leczo.js",
+  "module": "dist/leczo.module.js",
+  "umd:main": "dist/leczo.umd.js",
+  "unpkg": "dist/leczo.min.js",
+  "mangle": {
+    "regex": "^_"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "exports": {
+    "default": "./dist/leczo.modern.js"
+  },
+  "scripts": {
+    "build": "microbundle",
+    "build:dev": "rollup -c",
+    "predeploy": "npm run build"
+  },
+  "keywords": [
+    "ui",
+    "user",
+    "interface",
+    "templates",
+    "virtual",
+    "dom",
+    "vdom",
+    "components",
+    "front-end",
+    "framework"
+  ],
+  "author": "kammos",
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^8.3.2",
+    "microbundle": "^0.14.2",
+    "typescript": "^4.6.3"
+  }
+}

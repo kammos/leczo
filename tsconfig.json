@@ -1,0 +1,12 @@
+{
+    "include": ["src/index.ts", "src/**/*.ts"],
+    "compilerOptions": {
+        "outDir": "./dist",
+        "allowJs": true,
+        "checkJs": true,
+        "target": "ESNext",
+        "module": "ESNext",
+        "noImplicitAny": true,
+        "moduleResolution": "node"
+    }
+}
